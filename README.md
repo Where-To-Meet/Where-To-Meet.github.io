@@ -1,2 +1,2 @@
-# s17-hci.github.io
+# Where-To-Meet
 Phototype Demo for Where-To-Meet Application
