@@ -1,5 +1,5 @@
 # Where-To-Meet
 Phototype Demo for Where-To-Meet Application
 
-Original Design 
+## Original Design 
 ![](https://cloud.githubusercontent.com/assets/17581141/25928276/2d35e7c8-35b0-11e7-9a95-47d8f5c5b544.png)
