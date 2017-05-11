@@ -34,20 +34,38 @@
 
   <div class="container" style="margin:4% auto;width:30%;text-align:left">
 
-    <h2 align="center">Where do you want to meet your friends today?</h2>
-    <h6 align="center"style="margin:5% auto;">Select a group</h6>
+    <div>
+      <div style="float:left">
+        <h2 align="left">User Profile</h2>
+      </div>
+      <div style="float:right">
+        <button type="edit" class="btn btn-secondary" formaction="#">Edit</button>
+      </div>
+    </div>
 
-    <form>
+    <form style="padding-top:12%">
 
-      <div class="form-group" align="center" style="margin:2% auto;">
-        <button type="groupName" class="btn btn-primary form-group" formaction="/" style="width:50%;">Tech Cats</button>
-        <button type="groupName" class="btn btn-primary form-group" formaction="/" style="width:50%;">Thunderbird</button>
-        <button type="groupName" class="btn btn-primary form-group" formaction="/" style="width:50%;">More Groups</button>
+      <div class="form-group" align="left" style="margin:2% auto;">
+        <div style="width: 35%; float:left">
+           <img class="img-circle" src="billy-bronco.jpg" style="border-radius:50%;height:15%">
+        </div>
+        <div style="width: 65%; float:right">
+          <label>User ID: billyBronco</label></br>
+          <label>User Name: Billy Bronco</label></br>
+          <label>Email: billybronco@cpp.edu</label>
+        </div>
+
+        <label style="padding-top:3%;">Address: 3801 W Temple Ave, Pomona, CA 91768</label>
       </div>
 
-      <div class="form-group" align="center">
-        <button type="groupName" class="btn btn-primary" formaction="/"
-        style="width:50%; background-color:#003ea3; border-color:#003ea3;">Create New Group</button>
+      <div class="form-group" align="left" style="margin:2% auto;">
+        <label>Group List:</label></br>
+        <ul>
+          <li>Tech Cats</li>
+          <li>Thunderbird</li>
+          <li>HCI</li>
+          <li>Machine Learning</li>
+        </ul>
       </div>
 
     </form>
