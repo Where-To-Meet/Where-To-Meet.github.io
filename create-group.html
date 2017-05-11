@@ -34,22 +34,23 @@
 
   <div class="container" style="margin:4% auto;width:30%;text-align:left">
 
-    <h2 align="center">Where do you want to meet your friends today?</h2>
-    <h6 align="center"style="margin:5% auto;">Select a group</h6>
+    <h2>Create New Group</h2>
+    </br>
 
     <form>
-
-      <div class="form-group" align="center" style="margin:2% auto;">
-        <button type="groupName" class="btn btn-primary form-group" formaction="/" style="width:50%;">Tech Cats</button>
-        <button type="groupName" class="btn btn-primary form-group" formaction="/" style="width:50%;">Thunderbird</button>
-        <button type="groupName" class="btn btn-primary form-group" formaction="/" style="width:50%;">More Groups</button>
+      <div class="form-group">
+        <label for="groupName">Group name</label>
+        <input type="group" class="form-control" id="groupName" placeholder="Group name">
       </div>
 
-      <div class="form-group" align="center">
-        <button type="groupName" class="btn btn-primary" formaction="create-group.html"
-        style="width:50%; background-color:#003ea3; border-color:#003ea3;">Create New Group</button>
+      <div class="form-group">
+        <label for="memberName">Member name</label>
+        <input type="member" class="form-control" id="memberName" placeholder="Member name">
       </div>
+      <button type="addMember" class="btn btn-secondary" formaction="#">Add member</button>
 
+      <div style="padding-top:4%"></div>
+      <button type="save" class="btn btn-primary" formaction="#" style="float:right">Save</button>
     </form>
 
   </div> <!-- /container -->
