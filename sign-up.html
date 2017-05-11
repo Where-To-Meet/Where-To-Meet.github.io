@@ -15,37 +15,40 @@
 <body>
 
   <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+
     <div class="nav navbar-nav">
       <a class="navbar-brand" href="/">Where To Meet</a>
     </div>
+
   </nav>
 
-  <div class="container" style="margin:4% auto;width:30%;text-align:left">
+  <div class="container" style="margin:3% auto;width:30%;text-align:left">
 
-    <h2>User login</h2>
+    <h2>Sign up</h2>
 
     <form style="padding-top:4%">
       <div class="form-group">
-        <label for="inputEmail">Email address</label>
-        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+        <label for="name">Name</label>
+        <input type="name" class="form-control" id="name" placeholder="Name">
       </div>
 
       <div class="form-group">
-        <label for="inputPassword">Password</label>
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        <label for="userId">User ID</label>
+        <input type="userID" class="form-control" id="userId" placeholder="User ID">
       </div>
 
-      <button type="login" class="btn btn-primary" formaction="/">Log in</button>
-
-      </br>
-      </br>
-      <hr>
-
-      <div>
-        Need an account?
-        &nbsp;&nbsp;&nbsp;
-        <button type="signup" class="btn btn-secondary" formaction="sign-up.html">Sign Up</button>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email">
       </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="address" class="form-control" id="address" placeholder="Address">
+      </div>
+
+      <div style="padding-top:4%"></div>
+      <button type="save" class="btn btn-primary" formaction="/" style="float:right">Sign Up</button>
     </form>
 
   </div> <!-- /container -->
