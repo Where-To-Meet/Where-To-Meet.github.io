@@ -59,6 +59,9 @@ body {
   font-size: 18px;
 }
 
+.form_container{
+  height: 70%;
+}
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
