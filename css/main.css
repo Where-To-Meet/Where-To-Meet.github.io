@@ -36,7 +36,7 @@ body {
 }
 
 /* Customize container */
-@media (min-width: 768px) {
+@media{
   .container {
     max-width: 730px;
     border-radius: 25px;
