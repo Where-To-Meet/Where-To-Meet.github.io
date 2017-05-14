@@ -1,0 +1,25 @@
+.form {
+  position: relative;
+  z-index: 1;
+  max-width: 360px;
+  margin: 0 auto 110px;
+  padding-top: 20px;
+  text-align: center;
+}
+.form .profile-pic {
+  box-sizing: border-box;
+}
+.form .profile-pic img {
+  width: 25%;
+  border-radius:50%;
+  float: left;
+  margin-right:8%;
+  margin-left:4%;
+}
+.form .profile-info {
+  box-sizing: border-box;
+  text-align: left;
+}
+.form .profile-info .group {
+  font-size:120%;
+}
