@@ -7,6 +7,13 @@ body {
   background-position: center; 
 }
 
+.img_map{
+    width: 100%;
+    height: 45%;
+    background-image: url("../imgs/map_01.jpg");
+    background-size: 100% 100%;
+}
+
 /* Everything but the main container gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -26,6 +33,13 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
+}
+
+.login_header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 /* Custom page footer */
