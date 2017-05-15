@@ -1,0 +1,16 @@
+.form {
+  position: relative;
+  z-index: 1;
+  max-width: 360px;
+  margin: 0 auto 150px;
+  padding-top: 20px;
+  text-align: center;
+}
+.form .form-group {
+  text-align: left;
+}
+.form .form-button {
+  padding-top: 14%;
+  float: right;
+}
+
