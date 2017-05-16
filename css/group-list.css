@@ -1,0 +1,13 @@
+.form {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto 110px;
+  padding-top: 20px;
+  text-align: center;
+}
+.form .form-group .group-button-container .btn {
+  width: 85%;
+  padding: 14px 24px;
+  font-size: 18px;
+}
