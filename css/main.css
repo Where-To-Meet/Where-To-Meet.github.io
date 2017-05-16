@@ -4,7 +4,9 @@ body {
   padding-bottom: 20px;
   background-image: url("../imgs/bg_notag.png");
   background-size: cover;
-  background-position: center; 
+  background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .img_map{
@@ -56,8 +58,9 @@ body {
   .container {
     max-width: 730px;
     border-radius: 25px;
-    height: 95%;
+    max-height: 95%;
     background-color: white;
+    flex:1;
   }
 }
 .container-narrow > hr {
@@ -71,7 +74,7 @@ body {
 }
 .main_button_container .btn {
   width: 40%;
-  padding: 14px 24px;   
+  padding: 14px 24px;
   font-size: 18px;
 }
 
