@@ -1,0 +1,27 @@
+.form {
+  position: relative;
+  z-index: 1;
+  max-width: 350px;
+  margin: 0 auto 160px;
+  padding-top: 20px;
+  text-align: center;
+}
+.form .form-group {
+  text-align: left;
+  text-decoration: none;
+}
+.form .form-group .card {
+  background-color: #eee;
+  border-radius: 4px;
+  padding:10px;
+  border-color: red;
+  border-width:5px;
+  margin: 10px;
+  text-decoration: none;
+}
+.form .form-group .card:hover {
+  background-color: #cecece;
+}
+.form .form-group .collapsed {
+  text-decoration: none;
+}
