@@ -41,7 +41,15 @@
         </div>
         <div class="form-group">
           <h4>Member ID</h4>
-          <input type="memberId" class="form-control" id="memberId" value="billyBronco">
+          <input type="memberId" class="form-control" id="memberId" list="memberList" placeholder="Member ID">
+          <datalist id="memberList">
+            <option value="billyBronco">
+            <option value="tuffyTitan">
+            <option value="mattyMatador">
+            <option value="Diana">
+            <option value="Nanwarin">
+          </datalist>
+
           <button type="addMember" class="btn btn-secondary add-member" formaction="#">Add member</button>
         </div>
 
@@ -51,7 +59,7 @@
       </div>
 
       <footer class="footer">
-     
+
       </footer>
 
    </div>
