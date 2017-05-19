@@ -67,8 +67,10 @@ body {
   .container {
     max-width: 50%;
     min-width: 500px;
-    border-radius: 25px;
     max-height: 95%;
+    min-height: 95%;
+    border-radius: 25px;
+    
     background-color: white;
     position: relative;
     flex:1;
@@ -81,7 +83,7 @@ body {
 /* Main button container */
 .main_button_container {
   text-align: center;
-  height: 65%;
+  
 }
 .main_button_container .btn {
   width: 35%;
