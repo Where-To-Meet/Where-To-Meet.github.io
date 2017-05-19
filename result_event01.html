@@ -25,7 +25,7 @@
   
   <p>Need Help ?<i class="fa fa-question-circle help-icon"></i></p>
       <div class="help-content">
-        1. Try to click Users' Icon
+        1. Try to click Users' Icon <br>
         2. Try to check other result
       </div>
   
@@ -131,7 +131,11 @@ var marker = new google.maps.Marker({
           position: myLatLng,
           map: map,
           title: 'Study !',
-          animation: google.maps.Animation.DROP
+          animation: google.maps.Animation.DROP,
+          label: {
+            fontWeight: 'bold',
+            text: 'Cal Poly Pomona',
+          }
 });
     
 var nanwarinMarker = new google.maps.Marker({
