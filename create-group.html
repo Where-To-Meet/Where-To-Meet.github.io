@@ -16,6 +16,9 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -50,11 +53,23 @@
             <option value="Nanwarin">
           </datalist>
 
-          <button type="addMember" class="btn btn-secondary add-member" formaction="#">Add member</button>
+          <button type="addMember" class="btn btn-secondary add-member" data-toggle="modal" data-target="#myModal" formaction="#">Add member</button>
         </div>
 
         <div class="form-button">
           <button type="save" class="btn btn-primary" formaction="group-list.html">Save</button>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 style="text-align:center">Member successfully added to HCI group!</h4>
+            </div>
+          </div>
         </div>
       </div>
 
