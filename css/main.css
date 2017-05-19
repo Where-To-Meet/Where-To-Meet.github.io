@@ -58,7 +58,7 @@ body {
 }
 
 .footer::after {
-  content: "Spring 2017 - Human Computer Interaction Class, CPP";
+  content: "Spring 2017 - Human Computer Interaction";
   vertical-align: middle;
 }
 

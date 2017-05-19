@@ -51,7 +51,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYrdUAJk727dUUKzzP9Mz-LeXtZ_fw3xc&callback=myMap"></script>
+    
 <script>
         
         
@@ -61,17 +62,21 @@ var dianaLocation = {lat: 34.087922, lng: -117.8638655};
 var broncoLocation = {lat: 34.0319979, lng: -117.8486326};
     
 var map;
-var directionsDisplay;
+var directionsDisplay = new google.maps.DirectionsRenderer();
 var directionsService = new google.maps.DirectionsService();
 var map;
     
 function myMap() {
 directionsDisplay = new google.maps.DirectionsRenderer();
+
     
-var mapProp= {
-    center:myLatLng,
+var properties = {
+   center:myLatLng,
     zoom:12,
-};
+  };
+
+    map = new google.maps.Map(document.getElementById("googleMap"), properties);
+    directionsDisplay.setMap(map);
     
 var nanwarinIcon = {
     url: 'imgs/cat_01.png', // url
@@ -101,7 +106,7 @@ var broncoIcon = {
 }; 
     
     
-map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+map =new google.maps.Map(document.getElementById("googleMap"),properties);
    
 var marker = new google.maps.Marker({
           position: myLatLng,
@@ -145,23 +150,75 @@ var broncoMarker = new google.maps.Marker({
             text: 'Billy',
           },
 });
-
-  Route();   
+    
+    broncoMarker.addListener('click', function() {
+          Route();
+        });
+    
+    nanwarinMarker.addListener('click', function() {
+          Route2();
+        });
+    
+    dianaMarker.addListener('click', function() {
+          Route3();
+        });
+  
+  
 }
         
         
 function Route() {
     
-  var start = new google.maps.LatLng(myLatLng);
-  var end = new google.maps.LatLng(broncoLocation);
+  var end = new google.maps.LatLng(34.0565328, -117.8237182);
+  var start = new google.maps.LatLng(34.0319979, -117.8486326);
   var request = {
     origin: start,
     destination: end,
-    travelMode: google.maps.TravelMode.WALKING
+    travelMode: google.maps.TravelMode.DRIVING
   };
   directionsService.route(request, function(result, status) {
     if (status == google.maps.DirectionsStatus.OK) {
       directionsDisplay.setDirections(result);
+      directionsDisplay.setMap(map);
+    } else {
+      alert("couldn't get directions:" + status);
+    }
+  });
+}
+    
+function Route2() {
+    
+  var end = new google.maps.LatLng(34.0565328, -117.8237182);
+  var start = new google.maps.LatLng(nanwarinLocation);
+  var request = {
+    origin: start,
+    destination: end,
+    travelMode: google.maps.TravelMode.DRIVING
+  };
+  directionsService.route(request, function(result, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+      directionsDisplay.setDirections(result);
+      directionsDisplay.setMap(map);
+    } else {
+      alert("couldn't get directions:" + status);
+    }
+  });
+}
+ 
+    
+function Route3() {
+    
+  var end = new google.maps.LatLng(34.0565328, -117.8237182);
+  var start = new google.maps.LatLng(dianaLocation);
+  var request = {
+    origin: start,
+    destination: end,
+    travelMode: google.maps.TravelMode.DRIVING
+  };
+  directionsService.route(request, function(result, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+      directionsDisplay.setDirections(result);
+      directionsDisplay.setMap(map);
     } else {
       alert("couldn't get directions:" + status);
     }
@@ -173,7 +230,7 @@ google.maps.event.addDomListener(window, 'load', myMap);
 </script>
     
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYrdUAJk727dUUKzzP9Mz-LeXtZ_fw3xc&callback=myMap"></script>
+
     
 
   </body>
