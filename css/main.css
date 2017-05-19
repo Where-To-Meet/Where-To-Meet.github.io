@@ -9,6 +9,62 @@ body {
   flex-direction: column;
 }
 
+section {
+  background-color: white;
+  border: solid 1px #ccc;
+  margin: 5px;
+  padding: 1em;
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+/* help icon */
+
+.help-icon {
+  color: #deedda;
+  position: relative;
+  float: right;
+}
+
+.help-icon:hover,
+.help-icon.active {
+  color: #6b4;
+  cursor: pointer;
+}
+
+.help-icon:after {
+  display: none;
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid 10px transparent;
+  border-bottom: solid 5px #bedab6;
+  border-right: solid 10px #bedab6;
+  position: absolute;
+  top: 16px;
+  right: 8px;
+}
+
+.help-icon.active:after {
+  display: block;
+}
+
+.help-content {
+  display: none;
+  width: 120px;
+  height: 70px;
+  padding: 10px;
+  background: #bedab6;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 1.25;
+}
+
+
 .img_map{
     width: 100%;
     height: 45%;
