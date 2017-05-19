@@ -166,24 +166,17 @@ a{
 
 .calendar .days li{
 	width: 55px;
-    height: 24px;
-    text-align: center;
-	margin: auto auto;
-	font-size: 12px;
-	margin-bottom: 10px;
-	padding-top: 10px;
 }
 
 .calendar .days li a{
-	width: 24px;
-	height: 24px;
+	width: 36px;
+	height: 34px;
 	text-align: center;
 	margin: auto auto;
 	font-size: 12px;
-	font-weight: bold;
 	border-radius: 12px;
 	margin-bottom: 10px;
-	padding-top: 0px;
+	padding-top: 10px;
 }
 
 
@@ -194,10 +187,12 @@ a{
 .calendar .days li .selected{
 	background-color: #F5A1A3!important;
 	color: #ffffff;
+    font-weight: bold;
 }
 
 .calendar .days li .event{
 	color: #F5A1A3;
+    font-weight: bold;
 }
 
 

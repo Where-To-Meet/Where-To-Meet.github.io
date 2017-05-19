@@ -71,18 +71,20 @@
 								var _addClass = '';
 								if( _i === 12 ){ _addClass = ' class="selected"'; }
 								
+                                /*
 								switch( _i ){
 									case 8:
 									case 10:
 									case 27:
 										_addClass = ' class="event"';
 									break;
-								}
+								}*/
+                                
                                 if( _i === 12 ){
 								document.write( '<li><a href="result_event01.html" title="'+_i+'" data-value="'+_i+'"'+_addClass+'>'+_i+'</a></li>' );
                                 }
                                 else{
-                                    document.write( '<li>'+_i+'</a></li>' );
+                                    document.write( '<li><a href="create-event.html" title="'+_i+'" data-value="'+_i+'"'+_addClass+'>'+_i+'</a></li>' );
                                 }
 							}
 						</script>
