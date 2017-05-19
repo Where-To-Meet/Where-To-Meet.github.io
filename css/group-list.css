@@ -1,13 +1,26 @@
 .form {
   position: relative;
   z-index: 1;
-  max-width: 300px;
+  max-width: 350px;
   margin: 0 auto 110px;
   padding-top: 20px;
   text-align: center;
 }
 .form .form-group .group-button-container .btn {
-  width: 85%;
+  width: 55%;
   padding: 14px 24px;
   font-size: 18px;
+  margin-right:10px;
+  margin-left: 22%;
+}
+.glyphicon {
+  font-size: 20px;
+  padding: 5px;
+}
+span {
+  border-radius: 4px;
+  background-color: #dbdbdb;
+}
+span:hover {
+  background-color: #c6c6c6;
 }
