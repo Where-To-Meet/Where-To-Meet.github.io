@@ -7,11 +7,9 @@
   text-align: center;
 }
 .form .form-group .group-button-container .btn {
-  width: 55%;
-  padding: 14px 24px;
+  width: 65%;
+  padding: 10px 24px;
   font-size: 18px;
-  margin-right:10px;
-  margin-left: 22%;
 }
 .glyphicon {
   font-size: 20px;
